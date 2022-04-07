@@ -1,0 +1,42 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.7fr 1.3fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "NAV-bar- NAV-bar- NAV-bar- NAV-bar-"
+    "Art-wirth-title- design-to-split-the-art-or-large-art-piece design-to-split-the-art-or-large-art-piece Art-with-title"
+    "Art-with-title- design-to-split-the-art-or-large-art-piece design-to-split-the-art-or-large-art-piece Art-with-title-";
+}
+
+.NAV-bar- {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 2.2fr 0.1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . ."
+    ". . .";
+  grid-area: NAV-bar-;
+}
+
+.design-to-split-the-art-or-large-art-piece {
+  display: grid;
+  grid-template-columns: 0.1fr 8.1fr 0.1fr;
+  grid-template-rows: 0.3fr 1.7fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Alexis-Valtierra Alexis-Valtierra Alexis-Valtierra"
+    ". . .";
+  grid-area: design-to-split-the-art-or-large-art-piece;
+}
+
+.Alexis-Valtierra { grid-area: Alexis-Valtierra; }
+
+.Art-with-title { grid-area: Art-with-title; }
+
+.Art-with-title- { grid-area: Art-with-title-; }
+
+.Art-wirth-title- { grid-area: Art-wirth-title-; }
+
+.Art-with-title- { grid-area: Art-with-title-; }
